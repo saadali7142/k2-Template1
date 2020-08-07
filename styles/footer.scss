@@ -1,0 +1,65 @@
+@import "common";
+
+.footer-container{
+        
+    margin-top: 100px;
+    height: 466.2px;
+    background-color:$white;
+    hr{
+      width: 1px;
+      height: 160px;
+      margin-top: 40px;
+      margin-bottom: 65px;
+    }
+  }
+  .footer{
+
+    @include flexBox(space-evenly,center,row);
+    flex-wrap: wrap;
+  }          
+  .footer-img-box{
+    @include flexBox(center,center,column);
+}  
+    .footer-img{
+      margin-bottom: 25px;
+    }
+    .footer-img-description{
+      @include flexBox(center,center,row);
+      color: $p-text;
+      
+    }
+   
+  .emumba-img{
+    margin-left: 11px;
+    
+  }
+  
+  .aside-footer{
+    @include flexBox(center,flex-start,column);
+    color: $p-text;
+}
+    .address-icon{
+      @include flexBox(center,center,row);
+      margin-bottom: 25px;
+    
+    }
+  
+  .address{
+    width: 243px;
+    margin-left: 20px;
+    
+  }
+
+  .contact-footer{
+    @include flexBox(center,center,column);
+    text-align: center;
+  }
+
+  @include mobile-only{
+    hr{
+        display: none;
+      }
+      .aside-footer{
+          margin-top: 40px;
+      }
+  }

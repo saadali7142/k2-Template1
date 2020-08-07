@@ -1,0 +1,57 @@
+html {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;      
+    font-family: Exo;
+    font-size: 16px;  //62.5%
+  }
+
+  body {
+    h1 {
+      font-size: 40px;   //4rem
+      color: $heading;
+    }
+    h2 {
+      font-size: 30px;
+      color: $heading;
+    }
+    h3 {
+      font-size: 24px;
+    }
+    h4 {
+      font-size: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $primary-color;
+      a:hover {
+        color: $heading;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      color: $p-text;  // need to be changed
+      line-height: 1.81;
+    }
+  }
+  @media (max-width:$bp-mobile)  {
+    body {
+        h1 {
+          font-size: 24px;
+          color: $heading;
+        }
+      }
+    }
+  }
+//   @include mobile-only {
+//     body {
+//       h1 {
+//         font-size: 24px;
+//         color: $heading;
+//       }
+//     }
+//   }
+// }

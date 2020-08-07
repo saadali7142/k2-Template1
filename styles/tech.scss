@@ -1,0 +1,54 @@
+@import "common";
+.technology-heading {
+  @include flexBox(center, center, row);
+  margin-top: 94px;
+  margin-bottom: 50px;
+  color: $heading;
+  line-height: 5.13;
+
+  .tech-heading-icon {
+    margin-left: 20px;
+  }
+}
+.tech-flexbox {
+  @include flexBox(center, center, row);
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+}
+.tech-icon-container {
+  @include flexBox(center, center, column);
+  width: 172px;
+  height: 113px;
+  border-radius: 10px;
+  border: solid 1px $grey;
+  background-color: $white;
+  margin-left: 31px;
+  margin-bottom: 31px;
+
+
+  
+}
+
+.tech-icon {
+  height: 57px;
+}
+.line-break {
+  width: 80%;
+  color: $p-text;
+  margin:94px auto 57px auto;
+  
+  
+}
+
+@include mobile-only {
+  .tech-icon-container {
+    margin-left: 0;
+  }
+  .line-break {
+    margin-top: 20px;
+  }
+  .tech-icon {
+    height: auto;
+  }
+}

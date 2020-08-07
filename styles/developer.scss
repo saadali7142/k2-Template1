@@ -1,0 +1,65 @@
+@import "common";
+
+.developer-container {
+  @include flexBox(center, center, column);
+  margin-top: 128px;
+}
+.developer-grid {
+  @include grid(repeat(auto-fit, minmax(450px, 1fr)), auto, auto, 23px);
+  margin-top: 51px;
+  width: 100%;
+}
+.icon-container {
+  @include flexBox(center, center, row);
+  width: 64px;
+  height: 64px;
+  @include box-shadow(0,3px,29px,0,rgba(159, 159, 159, 0.16));
+  background-color: $white;
+  margin-right: 25px;
+}
+
+.icon-wrapper {
+  @include flexBox(center, center, row);
+}
+.icon-description {
+  max-width: 250px;
+  width: 100%;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.69;
+  letter-spacing: 0.19px;
+  color: $heading;
+}
+
+.developer-description {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: 0.23px;
+  text-align: left;
+  color: $p-text;
+  margin-top: 52px;
+  a {
+    font-weight: 500;
+    color: $primary-color;
+  }
+}
+
+@include mobile-only {
+  .developer-container {
+    width: 90%;
+    margin: 40px auto 0 auto;
+  }
+  .developer-grid {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+
+  .developer-description {
+    margin-top: 20px;
+    text-align: center;
+  }
+}

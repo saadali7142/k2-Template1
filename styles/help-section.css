@@ -1,0 +1,44 @@
+html * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Exo;
+  font-size: 16px;
+}
+
+body h1 {
+  font-size: 40px;
+  color: #152c43;
+}
+body h2 {
+  font-size: 30px;
+}
+body h3 {
+  font-size: 24px;
+}
+body h4 {
+  font-size: 20px;
+}
+body a {
+  text-decoration: none;
+}
+body a a:hover {
+  color: #06a0ff;
+}
+body p {
+  font-size: 16px;
+  color: #5c6774;
+}
+
+.help-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.help-container p {
+  max-width: 409px;
+  width: 90%;
+  margin-top: 17px;
+  color: #152c43;
+}

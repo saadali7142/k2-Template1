@@ -1,0 +1,80 @@
+@import "common";
+
+.pricing-container{
+    margin-top: 140px;
+    @include flexBox(center,center,row);
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+    .purchasing-box{
+      width: 380px;
+      height: 227px;
+      border-radius: 8px;
+      border: solid 1px $primary-color;
+      background-color: $white;
+      @include flexBox(center,center,column);
+    }
+      .purchasing-box-heading{
+        font-size: 55px;
+        font-weight: bold;
+        color: $primary-color;
+        margin: 0;
+      }
+
+      .purchasing-box-description{
+        font-weight: 600;
+        font-size: 18px;
+      }
+
+    .pricing-box{
+      // margin-left: 240px;
+      max-width: 480px;
+      width: 90%;
+    }
+  
+  .buy-btn{
+    @extend .demo-btn;
+    width: 276px;
+    height: 46px;
+    
+  }    
+
+  @include mobile-only{
+    .pricing-container{
+
+      margin-top:50px;
+    }
+      .pricing-box{
+        order: 1;
+
+      }
+
+      .purchasing-box{
+        height: 200px;
+        margin-top: 30px;
+        order: 2;
+        width: 70%;
+      }
+        .purchasing-box-heading{
+          font-size: 24px;
+        }
+
+        .buy-btn{
+          width: 180px;
+        }
+      }
+
+    
+  
+  @include tablet-up{
+    .pricing-container{
+     margin-top: 100px;
+    }
+    .purchasing-box{
+      margin-top: 50px;
+      order: 2;
+    }
+
+  }
+ 

@@ -1,0 +1,95 @@
+@import "common";
+
+// QUESTIONING CONTAINER
+.question-container {
+  @include flexBox(center, center, column);
+}
+  .question-box-heading {
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
+
+.question-box {
+  @include flexBox(space-evenly, center, row);
+  width: 100%;
+}
+
+form {
+    @include flexBox(stretch,stretch,column);
+
+}
+.name-input {
+  width: 256px;
+  height: 49px;
+  border-radius: 8px;
+  border: solid 1px $grey;
+  background-color: $white;
+  padding-left: 12px;
+  font-family: exo;
+  font-size: 14px;
+}
+
+.email-input {
+  width: 323px;
+  height: 49px;
+  border-radius: 8px;
+  border: solid 1px $grey;
+  background-color: $white;
+  margin-left: 19px;
+  padding-left: 12px;
+  font-family: exo;
+  font-size: 14px;
+}
+
+.txt-area {
+  resize: none;
+  min-height: 176px;
+  border-radius: 8px;
+  border: solid 1px $grey;
+  background-color: $white;
+  margin-top: 23px;
+  padding-top: 15px;
+  padding-left: 12px;
+  font-size: 14px;
+  font-family: exo;
+}
+
+.touch-btn {
+  @extend .demo-btn;
+  align-self: flex-end;      //Question to be asked
+  width: 222px;
+}
+
+@include mobile-only{
+    .email-input{
+        margin-left: 0px;
+        margin-top: 23px;
+      }
+      .question-container{
+    
+        width: 80%;
+        margin: 0 auto;
+    }
+        .question-box-heading{
+          margin:50px 0;
+          text-align: center;
+        }
+      
+      .question-box{
+        flex-wrap: wrap;
+        
+      }
+          .question-box-img{
+            width: 95%;
+            margin: 0 auto 50px auto;
+          }
+        
+    
+        form{
+          .name-input{
+            width: 323px;
+          }
+        }
+      }
+    
+

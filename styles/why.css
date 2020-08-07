@@ -1,0 +1,39 @@
+html * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Exo;
+  font-size: 16px;
+}
+
+body h1 {
+  font-size: 40px;
+  color: #152c43;
+}
+body h2 {
+  font-size: 30px;
+  color: #152c43;
+}
+body h3 {
+  font-size: 24px;
+}
+body h4 {
+  font-size: 20px;
+}
+body a {
+  text-decoration: none;
+}
+body a a:hover {
+  color: #06a0ff;
+}
+body p {
+  font-size: 16px;
+  color: #5c6774;
+}
+
+@media only screen and (max-width: 490px) {
+  body h1 {
+    font-size: 24px;
+    color: #152c43;
+  }
+}

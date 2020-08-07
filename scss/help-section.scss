@@ -1,0 +1,15 @@
+@import "common";
+
+.help-container{
+    @include flexBox(space-evenly,center,row);
+  
+    p{
+     max-width: 409px;
+     width: 90%;
+     margin-top: 17px;
+     color: $heading;
+   }
+    
+  }
+
+ 
